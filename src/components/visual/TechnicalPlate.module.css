@@ -1,0 +1,25 @@
+.plate {
+  margin: 0;
+  color: var(--color-text-primary);
+}
+
+.caption {
+  margin-bottom: var(--space-3);
+  font-size: var(--text-caption);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.svg {
+  width: 100%;
+  height: auto;
+  max-width: 420px;
+  display: block;
+}
+
+.anno {
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  font-family: inherit;
+}

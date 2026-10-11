@@ -1,0 +1,125 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  padding-top: env(safe-area-inset-top);
+  background: color-mix(in srgb, var(--color-bg-primary) 92%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition:
+    background-color var(--duration-smooth) var(--ease-vv),
+    border-color var(--duration-smooth) var(--ease-vv);
+}
+
+.scrolled {
+  background: var(--color-bg-primary);
+  border-bottom-color: var(--color-border);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  min-height: 72px;
+}
+
+.desktopNav {
+  display: none;
+  flex: 1;
+  justify-content: center;
+  gap: var(--space-8);
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 4px;
+  font-size: var(--text-nav);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+  position: relative;
+  transition: color var(--duration-fast) var(--ease-vv);
+}
+
+.link:hover {
+  color: var(--color-text-primary);
+}
+
+.link:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+  right: 4px;
+  height: 2px;
+  background-color: var(--color-accent);
+  border-radius: 1px;
+}
+
+.desktopCta {
+  display: none;
+}
+
+.menuToggle {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0 8px;
+  border: 0;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: var(--text-nav);
+  font-weight: var(--weight-medium);
+  cursor: pointer;
+}
+
+.mobilePanel {
+  padding-bottom: max(var(--space-10), env(safe-area-inset-bottom));
+  border-top: 1px solid var(--color-border);
+  background: var(--color-bg-primary);
+  min-height: calc(100svh - 72px - env(safe-area-inset-top));
+}
+
+.mobilePanel[hidden] {
+  display: none;
+}
+
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-6);
+  padding-top: var(--space-8);
+}
+
+.mobileLink {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-heading-md);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-heading);
+  transition: color var(--duration-fast) var(--ease-vv);
+}
+
+.mobileLink:hover {
+  color: var(--color-accent);
+}
+
+@media (min-width: 1024px) {
+  .desktopNav,
+  .desktopCta {
+    display: flex;
+  }
+
+  .menuToggle,
+  .mobilePanel {
+    display: none;
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" fill="none">
+  <rect width="800" height="600" fill="#eae7e0"/>
+  <rect x="100" y="100" width="600" height="400" rx="8" stroke="#d8d4cc" stroke-width="2" fill="#f5f3ee"/>
+  <path d="M200 450 L350 250 L500 450 L600 350 L700 450" stroke="#5f5d58" stroke-width="2" fill="none"/>
+  <circle cx="550" cy="220" r="35" fill="#171717" opacity="0.1"/>
+  <text x="400" y="530" text-anchor="middle" fill="#6a6761" font-family="sans-serif" font-size="14" letter-spacing="3">VV-02 · ABOUT ASSET</text>
+</svg>

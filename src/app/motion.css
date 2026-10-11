@@ -1,0 +1,127 @@
+html.motion-on .js-reveal {
+  transition:
+    opacity var(--duration-slow) var(--ease-vv),
+    transform var(--duration-slow) var(--ease-vv);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+html.motion-on .js-reveal:not(.is-in) {
+  opacity: 0 !important;
+  transform: translate3d(0, 16px, 0) !important;
+}
+
+html.motion-on .js-reveal.is-in {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+html.motion-on .js-words:not(.is-in) .word {
+  opacity: 0 !important;
+  transform: translate3d(0, 24px, 0) !important;
+}
+
+html.motion-on .js-words .word {
+  transition:
+    opacity var(--duration-slow) var(--ease-vv),
+    transform var(--duration-slow) var(--ease-vv);
+}
+
+html.motion-on .js-words.is-in .word {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+html.motion-on .js-words.is-in .word[data-offset="1"] {
+  transition-delay: 90ms;
+}
+
+html.motion-on .js-words.is-in .word[data-offset="2"] {
+  transition-delay: 180ms;
+}
+
+html.motion-on .js-words.is-in .word[data-offset="3"] {
+  transition-delay: 270ms;
+}
+
+/* SECTION 4 METHOD STAGE POINTER SCROLL ANIMATION */
+html.motion-on .js-stage-reveal {
+  opacity: 0;
+  transform: translate3d(0, 24px, 0);
+  transition:
+    opacity 700ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 700ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+html.motion-on .js-stage-reveal.is-in {
+  opacity: 1 !important;
+  transform: translate3d(0, 0, 0) !important;
+}
+
+html.motion-on .js-stage-reveal [class*="stageDot"] {
+  transform: scale(0);
+  transition: transform 550ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition-delay: calc(var(--reveal-delay, 0ms) + 60ms);
+}
+
+html.motion-on .js-stage-reveal.is-in [class*="stageDot"] {
+  transform: scale(1);
+}
+
+html.motion-on .js-stage-reveal [class*="number"] {
+  opacity: 0;
+  transform: translate3d(-10px, 0, 0);
+  transition:
+    opacity 550ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 550ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--reveal-delay, 0ms) + 100ms);
+}
+
+html.motion-on .js-stage-reveal.is-in [class*="number"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+html.motion-on .js-stage-reveal [class*="name"] {
+  opacity: 0;
+  transform: translate3d(0, 12px, 0);
+  transition:
+    opacity 550ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 550ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--reveal-delay, 0ms) + 140ms);
+}
+
+html.motion-on .js-stage-reveal.is-in [class*="name"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+html.motion-on .js-stage-reveal [class*="line"] {
+  opacity: 0;
+  transform: translate3d(0, 16px, 0);
+  transition:
+    opacity 550ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 550ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--reveal-delay, 0ms) + 180ms);
+}
+
+html.motion-on .js-stage-reveal.is-in [class*="line"] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal,
+  .js-words .word,
+  .js-track .stage,
+  .js-stage-reveal,
+  .js-stage-reveal [class*="stageDot"],
+  .js-stage-reveal [class*="number"],
+  .js-stage-reveal [class*="name"],
+  .js-stage-reveal [class*="line"] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

@@ -1,0 +1,21 @@
+.kicker {
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.title {
+  margin: var(--space-6) 0 var(--space-4);
+  max-width: 14ch;
+  font-size: var(--text-heading-xl);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-heading);
+}
+
+.body {
+  margin-bottom: var(--space-8);
+  max-width: 36ch;
+  color: var(--color-text-secondary);
+}

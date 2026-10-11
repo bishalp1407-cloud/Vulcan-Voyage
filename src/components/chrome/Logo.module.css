@@ -1,0 +1,24 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: var(--text-nav);
+  font-weight: var(--weight-semibold);
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--color-text-primary);
+  transition: opacity var(--duration-fast) var(--ease-vv);
+}
+
+.logo:hover {
+  opacity: 0.85;
+}
+
+.dot {
+  color: var(--color-accent);
+  margin-left: 1px;
+  font-size: 1.2em;
+  line-height: 0;
+}
