@@ -4,6 +4,7 @@ Newest first. Full entries live as dated files in this folder.
 
 | Date | Time | Phase | Objective | Entry |
 |------|------|-------|-----------|-------|
+| 2026-10-19 | 02:15 IST | audit | Comprehensive responsive audit across 14 viewports & layout fixes | [2026-10-19-screen-size-responsive-audit-and-fixes.md](./2026-10-19-screen-size-responsive-audit-and-fixes.md) |
 | 2026-10-08 | 16:15–16:50 IST | polish A | Calm hero statement, one photo slot, less competing copy | [2026-10-08-section-polish-hero.md](./2026-10-08-section-polish-hero.md) |
 | 2026-10-08 | 16:05 IST | 7 | Ship a calm pre-launch page that starts conversations | [2026-10-08-phase-7-polish-qa.md](./2026-10-08-phase-7-polish-qa.md) |
 | 2026-10-08 | 16:00 IST | 6 | Mobile is a designed layout; access is part of quality | [2026-10-08-phase-6-responsive-a11y.md](./2026-10-08-phase-6-responsive-a11y.md) |

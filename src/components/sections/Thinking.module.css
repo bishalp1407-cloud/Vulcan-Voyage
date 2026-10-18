@@ -72,16 +72,24 @@
     min-height: 80vh;
   }
 
+  .display {
+    font-size: clamp(3.75rem, 5.8vw, 6.75rem);
+  }
+
   .aside {
     padding-bottom: var(--space-8);
     justify-self: end;
   }
 
   .word[data-offset="1"] {
-    padding-left: 18%;
+    padding-left: 14%;
+  }
+
+  .word[data-offset="2"] {
+    padding-left: 4%;
   }
 
   .word[data-offset="3"] {
-    padding-left: 28%;
+    padding-left: 22%;
   }
 }

@@ -28,7 +28,7 @@
   display: none;
   flex: 1;
   justify-content: center;
-  gap: var(--space-8);
+  gap: clamp(var(--space-4), 2.2vw, var(--space-8));
 }
 
 .link {
@@ -60,10 +60,12 @@
 
 .desktopCta {
   display: none;
+  flex-shrink: 0;
 }
 
 .menuToggle {
   margin-left: auto;
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
